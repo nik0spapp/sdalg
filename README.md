@@ -46,21 +46,19 @@ Article class:
 Article title: 
 Egypt protest: 'Carnival atmosphere' among demonstrators
 Article text: 
-For many in Tahrir Square in central Cairo, the days are starting to take on a familiar 
-pattern. After nearly a week of demonstrations, many people now sleep here. There are a 
-few tents and pieces of cardboard that serve as beds on a small patch of grass in front 
-of a government building, the Mugamma. "We get just four hours sleep or so and then we wake 
-up to start the protest again," said Samah al-Dweik, who has not been to her home in Maadi, 
-just outside the city, since Friday.  "We do not know how long we will have to continue. 
+For many in Tahrir Square in central Cairo, the days are starting to take on a familiar pattern. After 
+nearly a week of demonstrations, many people now sleep here. There are a few tents and pieces of cardboard 
+that serve as beds on a small patch of grass in front of a government building, the Mugamma. "We get just 
+four hours sleep or so and then we wake up to start the protest again," said Samah al-Dweik, who has not been 
+to her home in Maadi, just outside the city, since Friday.  "We do not know how long we will have to continue. 
 Only if Mubarak goes, will we go home. 
 (...)
-They declare: "I'm free" and "Game over" but also demand policy changes from Western countries 
-that have supported the Mubarak government. "US: we hate your hypocrisy" read one banner, 
-referring to the disparity between American calls for human rights and democracy and its support 
-of their president. "Listen to the Egyptian people," another demanded. Despite an official curfew, 
-the numbers in the square swell in early evening and the chants increase in volume. Protesters are 
-only too aware of the government's hope that by delaying its response to their demands it will drain 
-their energy.  But they say they are determined to prove otherwise. 
+They declare: "I'm free" and "Game over" but also demand policy changes from Western countries that have 
+supported the Mubarak government. "US: we hate your hypocrisy" read one banner, referring to the disparity 
+between American calls for human rights and democracy and its support of their president. "Listen to the Egyptian 
+people," another demanded. Despite an official curfew, the numbers in the square swell in early evening and the 
+chants increase in volume. Protesters are only too aware of the government's hope that by delaying its response 
+to their demands it will drain their energy.  But they say they are determined to prove otherwise. 
 
 [INFO:] No comments found.
 ```
@@ -182,49 +180,51 @@ right next to your Tweets...You don't have to use their twitpic feature if you h
 http://vasenka.tumblr.com/
 
 
-I am looking for a good MS Windows based program that can keep track of places I have visited. I would 
-like to be able to view it hopefully by continent, country, states/provinces/regions/etc, cities/towns/etc.
-I currently do this on a MS Excel spreadsheet, but would like to be able to use it to view maps indicating 
-somehow the locations I have visited, as well as lists.I would also like to add details of my trips to each 
-location, including possibly photos.I live in the U.S.A., and am currently working on visiting all 50 states 
-(40 of them done, with 2 more to be added this year).That said, I have also travelled internationally. To 
-date I have visited 31 countires across 4 continents, and hope to do more in the future.Any thoughts? 
-Anything out there that can do something like this?
+I am looking for a good MS Windows based program that can keep track of places I have visited. I 
+would like to be able to view it hopefully by continent, country, states/provinces/regions/etc, cities/
+towns/etc. I currently do this on a MS Excel spreadsheet, but would like to be able to use it to view 
+maps indicating somehow the locations I have visited, as well as lists.I would also like to add details 
+of my trips to each location, including possibly photos.I live in the U.S.A., and am currently working 
+on visiting all 50 states (40 of them done, with 2 more to be added this year).That said, I have also 
+travelled internationally. To date I have visited 31 countires across 4 continents, and hope to do more 
+in the future.Any thoughts? Anything out there that can do something like this?
 
 
-Hey everyone i recently took up photography as a hobby and a really enjoying it. i'll be leaving on my RTW 
-trip in about a month and will be going through parts of europe first then the middle east, asia and south 
-and then north america. yet i want to only carry essential gear for my photography yet still want to take 
-great shots. I'm using a Sony A57 with a 18-35mm lens, still in the market for a larger and better lens yet 
-i want to ask those here who have done travel photography what essential gear should i bring and what can i 
-do without.i'll certainly be taking as compact a tripod as i can find yet i'll also be taking filters and 
-lens hoods. this gear is already starting to feel bulky in my mind but can i afford to do without these 
-items in the least and is there any other ones i should consider.looking forward to all replies.
+Hey everyone i recently took up photography as a hobby and a really enjoying it. i'll be leaving on my 
+RTW trip in about a month and will be going through parts of europe first then the middle east, asia 
+and south and then north america. yet i want to only carry essential gear for my photography yet still 
+want to take great shots. I'm using a Sony A57 with a 18-35mm lens, still in the market for a larger 
+and better lens yet i want to ask those here who have done travel photography what essential gear should 
+i bring and what can i do without.i'll certainly be taking as compact a tripod as i can find yet i'll 
+also be taking filters and lens hoods. this gear is already starting to feel bulky in my mind but can 
+i afford to do without these items in the least and is there any other ones i should consider. looking 
+forward to all replies.
 
 
-Sorry, not sure which branch to put this under.I wanted to buy something online in a foreign currency. I 
-have done this many times whilst abroad but just wanted to check with the company if it was okay. The company 
-told me that they only accept £ UK pounds and euros. I wanted to pay in US$. The question is -If I pay in US$ 
-for a euro transaction, does my bank send dollars for the equivalent amount and the receiving bank does the 
-exchange? Or, does my bank send euros? I am paying the exchange rate charges so I assume my bank sends euros.
-If that is the case then the receiving company gets euros, so I am a bit confused why they would say that.
-It is a European company, the bank is in Europe, I am European, the delivery and invoice address is European, 
-so there are no issues with customs/tax.Thanks.
+Sorry, not sure which branch to put this under.I wanted to buy something online in a foreign currency. 
+I have done this many times whilst abroad but just wanted to check with the company if it was okay. The 
+company told me that they only accept £ UK pounds and euros. I wanted to pay in US$. The question is 
+-If I pay in US$ for a euro transaction, does my bank send dollars for the equivalent amount and the 
+receiving bank does the exchange? Or, does my bank send euros? I am paying the exchange rate charges so 
+I assume my bank sends euros. If that is the case then the receiving company gets euros, so I am a bit 
+confused why they would say that. It is a European company, the bank is in Europe, I am European, the 
+delivery and invoice address is European, so there are no issues with customs/tax.Thanks.
 
 
-Greetings, travelers!Heading to South Luangwa National Park in Zambia and then making way by bus to Kruger in 
-South Africa over a period of weeks.Wondering if anyone reading this has had experience with putting a sim in 
-a Boostmobile or Sprint HTC Design Evo 4g? Were you able to get it working on data , and if so what speeds? 
-Did the wi fi hotspot function work ?If not HTC, did anyone use a usb modem mi fi wi fihotspot in South Africa, 
-Botswana, or Zambia?Here's and example of the device I am talking about :Huwaei BROADBAND MIFI WIFI RouterOr 
-did you purchase a local data modem stick and which company did you use?Thanks
+Greetings, travelers!Heading to South Luangwa National Park in Zambia and then making way by bus to 
+Kruger in South Africa over a period of weeks.Wondering if anyone reading this has had experience with
+putting a sim in a Boostmobile or Sprint HTC Design Evo 4g? Were you able to get it working on data , 
+and if so what speeds? Did the wi fi hotspot function work ?If not HTC, did anyone use a usb modem mi 
+fi wi fihotspot in South Africa, Botswana, or Zambia?Here's and example of the device I am talking 
+about :Huwaei BROADBAND MIFI WIFI RouterOr did you purchase a local data modem stick and which company 
+did you use?Thanks
 
-
-My last few travel cameras have been from the Panasonic TZ series but the last 2 cameras that I've had have 
-readily gotten what looks like dirt in the lens. Has anyone else experienced this problem?I want to get a new 
-camera to replace the one with dust in the lens (it is now no longer under warrenty so can't get it fixed 
-cheaply) and am wondering whether to go for something else this time and what? I like the compact high zoom 
-format of the Panasonic TZ series but maybe this is also the reason for the problems? Any recommendations? 
+My last few travel cameras have been from the Panasonic TZ series but the last 2 cameras that I've 
+had have readily gotten what looks like dirt in the lens. Has anyone else experienced this problem? I 
+want to get a new camera to replace the one with dust in the lens (it is now no longer under warrenty 
+so can't get it fixed cheaply) and am wondering whether to go for something else this time and what? 
+I like the compact high zoom format of the Panasonic TZ series but maybe this is also the reason for 
+the problems? Any recommendations? 
 Thanks!
 ``` 
 
