@@ -3,7 +3,7 @@ webpage_segmentation
 The attached code implements SD algorithm which proceeds to web page segmentation and noise removal
 and returns the identified web page type (Article, Article with Comments and Multiple areas) along with
 the region annotations per type, which was described in the following paper: 
-<ul><li>Nikolaos Pappas, Georgios Katsimpras, Efstathios Stamatatos, <i>Extracting Informative Textual Parts from Web Pages Containing User-Generated Content</i>, 12th International Conference on Knowledge Management and Knowledge Technologies, Graz, Austria, 2012 
+<ul><li>Nikolaos Pappas, Georgios Katsimpras, Efstathios Stamatatos, <i>Extracting Informative Textual Parts from Web Pages Containing User-Generated Content</i>, 12th Int. Conference on Knowledge Management and Knowledge Technologies, Graz, Austria, 2012 
 <br /> <a href="http://publications.idiap.ch/downloads/papers/2012/Pappas_I-KNOW_2012.pdf" target="_blank">http://publications.idiap.ch/downloads/papers/2012/Pappas_I-KNOW_2012.pdf</a>
 </li></ul>
 
