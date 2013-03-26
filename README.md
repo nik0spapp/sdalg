@@ -28,7 +28,7 @@ To run the SD algorithm simply execute the sd_algorithm.py file and give as para
 the URL of your preference. Make sure that you use double quotes in case of weird parameters
 on the URL, check examples below. Lastly, the algorithm relies on two thresholds that have
 to be tuned on a subset of your target documents (see the related paper), otherwise the 
-segmentation performance maybe poor. 
+segmentation may not be as expected. 
 
 ```bash
 $ python sd_algorithm.py http://www.bbc.co.uk/news/world-africa-12328506
