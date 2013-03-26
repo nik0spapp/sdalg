@@ -54,13 +54,13 @@ up to start the protest again," said Samah al-Dweik, who has not been to her hom
 just outside the city, since Friday.  "We do not know how long we will have to continue. 
 Only if Mubarak goes, will we go home. 
 (...)
-They declare: "I'm free" and "Game over" but also demand policy changes from Western 
-countries that have supported the Mubarak government. "US: we hate your hypocrisy" read one banner, 
-referring to the disparity between American calls for human rights and democracy and its support of their 
-president. "Listen to the Egyptian people," another demanded. Despite an official curfew, the numbers in the 
-square swell in early evening and the chants increase in volume. Protesters are only too aware of the government's 
-hope that by delaying its response to their demands it will drain their energy.  But they say they are determined 
-to prove otherwise. 
+They declare: "I'm free" and "Game over" but also demand policy changes from Western countries 
+that have supported the Mubarak government. "US: we hate your hypocrisy" read one banner, 
+referring to the disparity between American calls for human rights and democracy and its support 
+of their president. "Listen to the Egyptian people," another demanded. Despite an official curfew, 
+the numbers in the square swell in early evening and the chants increase in volume. Protesters are 
+only too aware of the government's hope that by delaying its response to their demands it will drain 
+their energy.  But they say they are determined to prove otherwise. 
 
 [INFO:] No comments found.
 ```
