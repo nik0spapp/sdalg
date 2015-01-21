@@ -9,7 +9,7 @@ the region annotations per type, which was described in the following paper:
 
 Dependencies
 ------------
-The available code for unsupervised sentiment classification requires Python programming 
+The available code for webpage segmentation requires Python programming 
 language and pip package manager to run. For detailed installing instructions please refer to 
 the following links: <br />
 http://www.python.org/getit/ <br />
