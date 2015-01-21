@@ -1,4 +1,4 @@
-Webpage segmentation
+SD-algorithm
 ======================
 The attached code implements SD algorithm which proceeds to web page segmentation and noise removal
 and returns the identified web page type (Article, Article with Comments and Multiple areas) along with
