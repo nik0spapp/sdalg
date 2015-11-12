@@ -228,6 +228,4 @@ I like the compact high zoom format of the Panasonic TZ series but maybe this is
 the problems? Any recommendations? 
 Thanks!
 ``` 
-
-
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/9919a2eb95aaf5a1d91f0c2c6bd7a9a8 "githalytics.com")](http://githalytics.com/nik0spapp/webpage_segmentation)
+ 
