@@ -97,7 +97,7 @@ Article title:
 Chocolate May Reduce Risk of Heart Failure
 Article text: 
 Forget what you’ve heard about death by chocolate.  A new Harvard study shows that chocolate may be good 
-for your heart.  It's a great day for chocolate lovers everywhere. Murray Mittleman and his colleagues 
+for your heart. It's a great day for chocolate lovers everywhere. Murray Mittleman and his colleagues 
 at Harvard Medical School studied data on 31,823 middle-aged and elderly Swedish women to assess the 
 relationship between chocolate and heart failure.  The women who consumed an average of one to two servings 
 (that’s a fairly small amount) of high-quality, cocoa-rich chocolate per week had a 32 percent lower risk 
