@@ -1,8 +1,6 @@
 Style-Density Tree based Algorithm
 ======================
-The attached code implements SD algorithm which proceeds to web page segmentation and noise removal
-and returns the identified web page type (Article, Article with Comments and Multiple areas) along with
-the region annotations per type, which was described in the following paper: 
+The attached code is a python version of the Style-Density tree algorithm, which was described in the following paper. The SD algorithm performs web page segmentation and noise removal and then returns the identified web page type (Article, Article with Comments and Multiple areas) along with the region annotations per type.
  
 ``` 
 @inproceedings{pappas12,
