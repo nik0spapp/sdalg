@@ -1,13 +1,26 @@
-SD-tree based algorithm
+Style-Density Tree based Algorithm
 ======================
 The attached code implements SD algorithm which proceeds to web page segmentation and noise removal
 and returns the identified web page type (Article, Article with Comments and Multiple areas) along with
 the region annotations per type, which was described in the following paper: 
-<ul><li>Nikolaos Pappas, Georgios Katsimpras, Efstathios Stamatatos, <i>Extracting Informative Textual Parts from Web Pages Containing User-Generated Content</i>, 12th Int. Conference on Knowledge Management and Knowledge Technologies, Graz, Austria, 2012 
-<br /> <a href="http://publications.idiap.ch/downloads/papers/2012/Pappas_I-KNOW_2012.pdf" target="_blank">http://publications.idiap.ch/downloads/papers/2012/Pappas_I-KNOW_2012.pdf</a>
-</li></ul>
+ 
+``` 
+@inproceedings{pappas12,
+ author = {Pappas, Nikolaos and Katsimpras, Georgios and Stamatatos, Efstathios},
+ title = {Extracting Informative Textual Parts from Web Pages Containing User-generated Content},
+ booktitle = {Proceedings of the 12th International Conference on Knowledge Management and Knowledge Technologies},
+ series = {i-KNOW '12},
+ year = {2012},
+ isbn = {978-1-4503-1242-4},
+ location = {Graz, Austria},
+ pages = {4:1--4:8},
+ articleno = {4},
+ numpages = {8},
+ doi = {10.1145/2362456.2362462}, 
+}  
+``` 
 
-Dependencies
+Installing dependencies
 ------------
 The available code for webpage segmentation requires Python programming 
 language and pip package manager to run. For detailed installing instructions please refer to 
@@ -84,7 +97,7 @@ Article title:
 Chocolate May Reduce Risk of Heart Failure
 Article text: 
 Forget what you’ve heard about death by chocolate.  A new Harvard study shows that chocolate may be good 
-for your heart.  Its a great day for chocolate lovers everywhere. Murray Mittleman and his colleagues 
+for your heart.  It's a great day for chocolate lovers everywhere. Murray Mittleman and his colleagues 
 at Harvard Medical School studied data on 31,823 middle-aged and elderly Swedish women to assess the 
 relationship between chocolate and heart failure.  The women who consumed an average of one to two servings 
 (that’s a fairly small amount) of high-quality, cocoa-rich chocolate per week had a 32 percent lower risk 
@@ -97,7 +110,7 @@ were achieved with high-quality, cocoa-rich chocolate.  Read DARK chocolate.  
 And, be sure the one you choose is low in sugar, has no trans or hydrogenated fats, and no artificial 
 colors, flavors, or other synthetic ingredients. Related:Easy Greening: Chocolate 101Chocolate: Fact vs. 
 FictionDark Chocolate Definitely Eases Emotional StressChocolate Tantric Pie Subscribe to my free 
-e-newsletter Worlds Healthiest News for more cutting-edge health news, tips, recipes, and more. 
+e-newsletter World's Healthiest News for more cutting-edge health news, tips, recipes, and more. 
 
 Comment class:
 [x] comment_text contain_floats
