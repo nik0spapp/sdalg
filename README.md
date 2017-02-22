@@ -43,7 +43,7 @@ on the URL, check examples below. Lastly, the algorithm relies on two thresholds
 to be tuned on a subset of your target documents (see the related paper), otherwise the 
 segmentation may not be as expected. 
 
-```bash
+```
 $ python sd_algorithm.py http://www.bbc.co.uk/news/world-africa-12328506
 [*] Create DOM tree...
 [*] Calculating initial groups...
@@ -78,7 +78,7 @@ to their demands it will drain their energy.  But they say they are determined t
 ```
 
 
-```bash
+```
 $ python sd_algorithm.py http://www.care2.com/greenliving/chocolate-may-reduce-risk-of-heart-failure.html
 [*] Create DOM tree...
 [*] Calculating initial groups...
@@ -137,7 +137,7 @@ Thank you for sharing.
 
 
 
-```bash
+```
 $ python sd_algorithm.py "http://www.lonelyplanet.com/thorntree/forum.jspa;jsessionid=57DA8CB66960A9D820CAB16BB221094D.app01?forumID=34&errorMsg=The%20thread%20requested%20is%20not%20currently%20available"
 [*] Create DOM tree...
 [*] Calculating initial groups...
