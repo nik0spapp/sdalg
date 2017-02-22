@@ -110,7 +110,7 @@ were achieved with high-quality, cocoa-rich chocolate.  Read DARK chocolate.  
 And, be sure the one you choose is low in sugar, has no trans or hydrogenated fats, and no artificial 
 colors, flavors, or other synthetic ingredients. Related:Easy Greening: Chocolate 101Chocolate: Fact vs. 
 FictionDark Chocolate Definitely Eases Emotional StressChocolate Tantric Pie Subscribe to my free 
-e-newsletter World's Healthiest News for more cutting-edge health news, tips, recipes, and more. 
+e-newsletter World's Healthiest News for more cutting-edge health news, tips, recipes, and more. 
 
 Comment class:
 [x] comment_text contain_floats
