@@ -46,18 +46,18 @@ class SDAlgorithm():
     
     def analyze_page(self):
                 
-        print "[*] Create DOM tree..."
+        print("[*] Create DOM tree...")
         tree = self.construct_page_tree() 
         node = tree.getroot()
         self.cross_tree(node) 
-        print "[*] Calculating initial groups..."
-        print "[*] Merging groups..."
+        print("[*] Calculating initial groups...")
+        print("[*] Merging groups...")
         self.merge_groups(tree) 
-        print "[*] Creating regions..."
+        print("[*] Creating regions...")
         self.create_regions(tree) 
-        print "[*] Calculating distances from max region..."
+        print("[*] Calculating distances from max region...")
         self.calculate_distances_from_max(tree)  
-        print "[*] Printing regions...\n"
+        print("[*] Printing regions...\n")
         for region in self.regions:
             region._print()  
             
@@ -81,9 +81,9 @@ class SDAlgorithm():
         doc = html.fromstring(html_body)
         cleaner = Cleaner(**ARGS)
         try:
-        	doc = cleaner.clean_html(doc)
+            doc = cleaner.clean_html(doc)
         except:
-        	pass
+            pass
         tree = doc.getroottree() 
         return tree 
         
@@ -108,39 +108,39 @@ class SDAlgorithm():
                 
                 context_validated =  self.candidate_context_validated(article, grouped_comments, max_group)            
                 if self.big_areas_in_same_level(article, grouped_comments, max_group) and not validated:
-                    print Tcolors.INFO + " Multiple similar regions detected!"
-                    print "Class: "
-                    print Tcolors.RES + " " + grouped_comments[max_group][0].class_name
-                    print "Texts: " 
+                    print(Tcolors.INFO + " Multiple similar regions detected!")
+                    print("Class: ")
+                    print(Tcolors.RES + " " + grouped_comments[max_group][0].class_name)
+                    print("Texts: " )
                     for reg in grouped_comments[max_group]:
-                        print reg.full_text
+                        print(reg.full_text)
                     return None, None, grouped_comments[max_group]
                 elif not context_validated: 
-                    print
+                    print()
                     self.print_article(article)
-                    print 
-                    print Tcolors.INFO + " No comments found."                
+                    print()
+                    print(Tcolors.INFO + " No comments found.")                
                     return article, None, None
                 elif context_validated:
-                    print 
-                    print Tcolors.INFO + " Article with comments detected!"
+                    print()
+                    print(Tcolors.INFO + " Article with comments detected!")
                     self.print_article(article)
-                    print 
-                    print "Comment class:"      
-                    print Tcolors.RES + " " + max_group 
-                    print "Comments:" 
+                    print()
+                    print("Comment class:")
+                    print(Tcolors.RES + " " + max_group) 
+                    print("Comments:")
                     for com in grouped_comments[max_group]:
-                        print com.full_text              
+                        print(com.full_text)
                     return article, grouped_comments[max_group], None
             else:
                 self.print_article(article)
                 return article, None, None
         else: 
-            print Tcolors.INFO + " Multiple similar regions detected!"  
-            print Tcolors.RES
-            print "Texts: " 
+            print(Tcolors.INFO + " Multiple similar regions detected!" ) 
+            print(Tcolors.RES)
+            print("Texts: ")
             for reg in biggest_regions:
-                print reg.full_text
+                print(reg.full_text)
             return None, None, biggest_regions
     
     def group_regions(self):
@@ -161,8 +161,8 @@ class SDAlgorithm():
                     self.min_region_level = region.distance_from_root
                     
             pr_com = (len(region.tree.xpath(region.root)) > 0 and\
-            	      region.tree.xpath(region.root)[0].getparent().attrib.has_key('class') and \
-            	     region.tree.xpath(region.root)[0].getparent().attrib["class"].count('comment') > 0)
+                      region.tree.xpath(region.root)[0].getparent().attrib.has_key('class') and \
+                     region.tree.xpath(region.root)[0].getparent().attrib["class"].count('comment') > 0)
             if region.distance_from_max != 0 and (region.class_name != "" or \
                (region.class_name == "" and pr_com)):
                 if not grouped_comments.has_key(region.class_name):
@@ -233,9 +233,9 @@ class SDAlgorithm():
         max_group_density = 0
         
         if article.root_node.getparent() is not None:
-        	article_parent_path = self.get_path(article.root_node.getparent())
+            article_parent_path = self.get_path(article.root_node.getparent())
         else:
-        	article_parent_path = ""
+            article_parent_path = ""
         max_group = None
         groups_level = {}        
         groups_below_article_tags = []
@@ -366,7 +366,7 @@ class SDAlgorithm():
         Check whether the candidate comment regions validate as such based on
         the keywords that are detected in their content.
         """
-        print Tcolors.ACT + " Validating candidate comment group based on its content..."
+        print(Tcolors.ACT + " Validating candidate comment group based on its content...")
         COMMENT_TAGS = ['comment', 'reply', 'response', 'ident', 'said:', 'rate','user','inner','wrote:']
         STRONG_COMMENT_TAGS = ['comment','reply','user','said:','wrote:']
         
@@ -411,13 +411,13 @@ class SDAlgorithm():
         """
         Print the details of a detected article (class, title and text).
         """
-        print Tcolors.INFO + " Article detected!" 
-        print "Article class: "
-        print Tcolors.RES + " " + repr(article.class_name)
-        print "Article title: "
-        print article.get_ancestor_title() 
-        print "Article text: "
-        print article.full_text.replace("\n"," ") 
+        print(Tcolors.INFO + " Article detected!" )
+        print("Article class: ")
+        print(Tcolors.RES + " " + repr(article.class_name))
+        print("Article title: ")
+        print(article.get_ancestor_title()) 
+        print("Article text: ")
+        print(article.full_text.replace("\n"," ")) 
     
     def merge_groups(self, tree):
         """
@@ -498,7 +498,7 @@ class SDAlgorithm():
             if region.distance_from_max == 0 and region.parts == 1 \
                 and not fixed_regions and len(list(region.root_node.getchildren())) > 1\
                 and (self.content_appears_in_other_region(region)\
-                or self.close_diff_from_second_max(max_region)): #and
+                or self.close_diff_from_second_max(self.max_region)): #and
                 self.regions.remove(region)
                 self.recompute_max_density_region()
                 fixed_regions = True
@@ -510,17 +510,17 @@ class SDAlgorithm():
         """
         node_text = "" 
         try:
-        	t = node.text
-        	t = True
+            t = node.text
+            t = True
         except:
-        	t = False
+            t = False
         if t and node.text is not None: 
             node_text = node.text
         else:
             try: 
-        		itertext = list(node.itertext())
+                itertext = list(node.itertext())
             except: 
-        		itertext = []
+                itertext = []
             itertexts = [text for text in itertext if text is not None and re.sub(r"\n|\r|\t| |,|\.","",text) != ""]
             descendants = [des for des in list(node.iterdescendants())]
             descendants_length = len(descendants)
