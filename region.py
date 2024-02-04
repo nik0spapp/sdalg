@@ -73,17 +73,17 @@ class Region():
         """
         node_text = "\n" 
         for des in node.iter():
-			try:
-				if des.text is not None and (des.tag not in ['script', 'style','h1','h2']\
-		           and not isinstance(des, HtmlComment) and re.sub(r"\n|\r|\t| |,|;|\.","",des.text) != ""\
-		           or (des.tag == "p")) and des.text.find(".") > -1 and node_text.find(des.text_content()) == -1:
-					node_text += re.sub(r"\n|\r|\t","",des.text_content())
-					if des.tag == 'p':
-						node_text += "\n"   
-					elif des.tail is not None and des.tag in ['table']:
-						node_text += des.tail
-			except:
-				node_text += ""
+            try:
+                if des.text is not None and (des.tag not in ['script', 'style','h1','h2']\
+                   and not isinstance(des, HtmlComment) and re.sub(r"\n|\r|\t| |,|;|\.","",des.text) != ""\
+                   or (des.tag == "p")) and des.text.find(".") > -1 and node_text.find(des.text_content()) == -1:
+                    node_text += re.sub(r"\n|\r|\t","",des.text_content())
+                    if des.tag == 'p':
+                        node_text += "\n"   
+                    elif des.tail is not None and des.tag in ['table']:
+                        node_text += des.tail
+            except:
+                node_text += ""
                           
         node_text = node_text.replace("&gt",">")
         node_text = re.sub(r"  |,,|--|==|<!--(.|\s)*?-->|<!\[CDATA(.|\s)*?\]\]>","",node_text)  
@@ -117,7 +117,7 @@ class Region():
         Returns the id attribute of the node if it exists, otherwise it returns 
         an empty string.
         """
-        if self.root_node.attrib.has_key('id'):
+        if 'id' in self.root_node.attrib:
             return self.root_node.attrib['id']
         else:
             return ""
@@ -127,7 +127,7 @@ class Region():
         Returns the CSS class attribute of the node if it exists, otherwise it returns 
         an empty string.
         """
-        if self.root_node.attrib.has_key('class'):
+        if 'class' in self.root_node.attrib:
             return self.root_node.attrib['class']
         else:
             return ""
@@ -135,18 +135,18 @@ class Region():
     def _print(self): 
         # Uncomment the following for debugging of the regions.
         """
-        print Tcolors.CYAN  + "[x] Region:", self.root
-        print "-----------------------------------------------------------------------------"
-        print Tcolors.ENDC + Tcolors.WARNING + " Tag:", self.root_node.tag
-        print " Class:", self.class_name
-        print " Id:", self.id
-        print " Level:", self.distance_from_root
-        print " Parts:", self.parts
-        print " Density:", self.density
-        print " Distance from max:", self.distance_from_max
-        print " Has title on ancestors:", self.has_title_at_ancestors(None, self.root_node)
-        print " Full text: \n", self.full_text 
-        print "\n" + Tcolors.ENDC
+        print(Tcolors.CYAN  + "[x] Region:", self.root)
+        print("-----------------------------------------------------------------------------")
+        print(Tcolors.ENDC + Tcolors.WARNING + " Tag:", self.root_node.tag)
+        print(" Class:", self.class_name)
+        print(" Id:", self.id)
+        print(" Level:", self.distance_from_root)
+        print(" Parts:", self.parts)
+        print(" Density:", self.density)
+        print(" Distance from max:", self.distance_from_max)
+        print(" Has title on ancestors:", self.has_title_at_ancestors(None, self.root_node))
+        print(" Full text: \n", self.full_text)
+        print("\n" + Tcolors.ENDC)
         """
-    	pass 
+        pass 
 
