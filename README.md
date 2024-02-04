@@ -27,7 +27,6 @@ http://www.pip-installer.org/en/latest/
 After installing them, you should be able to install the following packages: <br />
 ```bash
 $ pip install nltk  
-$ pip install urllib 
 $ pip install lxml 
 ```
 
