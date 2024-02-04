@@ -76,8 +76,8 @@ class SDAlgorithm():
         Downloads the HTML page given the URL and creates the DOM page tree.
         Only the nodes that are useful for the segmentation are kept.
         """
-        page = urllib.urlopen(self.url)
-        html_body = page.read()  
+        with urllib.request.urlopen(self.url) as response:
+            html_body = response.read()  
         doc = html.fromstring(html_body)
         cleaner = Cleaner(**ARGS)
         try:
