@@ -117,7 +117,7 @@ class Region():
         Returns the id attribute of the node if it exists, otherwise it returns 
         an empty string.
         """
-        if self.root_node.attrib.has_key('id'):
+        if 'id' in self.root_node.attrib:
             return self.root_node.attrib['id']
         else:
             return ""
@@ -127,7 +127,7 @@ class Region():
         Returns the CSS class attribute of the node if it exists, otherwise it returns 
         an empty string.
         """
-        if self.root_node.attrib.has_key('class'):
+        if 'class' in self.root_node.attrib:
             return self.root_node.attrib['class']
         else:
             return ""

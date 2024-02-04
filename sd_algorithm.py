@@ -102,7 +102,7 @@ class SDAlgorithm():
         if article_exists: 
             max_group = self.get_candidate_article(article, grouped_comments)
 
-            if grouped_comments.has_key(max_group): 
+            if max_group in grouped_comments: 
                 if grouped_comments != {}:
                     validated = self.candidate_group_level_validated(max_group, article, grouped_comments)
                 
@@ -161,11 +161,11 @@ class SDAlgorithm():
                     self.min_region_level = region.distance_from_root
                     
             pr_com = (len(region.tree.xpath(region.root)) > 0 and\
-                      region.tree.xpath(region.root)[0].getparent().attrib.has_key('class') and \
+                      ('class' in region.tree.xpath(region.root)[0].getparent().attrib) and \
                      region.tree.xpath(region.root)[0].getparent().attrib["class"].count('comment') > 0)
             if region.distance_from_max != 0 and (region.class_name != "" or \
                (region.class_name == "" and pr_com)):
-                if not grouped_comments.has_key(region.class_name):
+                if region.class_name not in grouped_comments:
                     grouped_comments[region.class_name] = [region]
                 else:
                     grouped_comments[region.class_name].append(region)
@@ -353,7 +353,7 @@ class SDAlgorithm():
         Check if the big regions (or areas) belong to the same level in the 
         HTML tree structure.
         """
-        if grouped_comments.has_key(max_group):
+        if max_group in grouped_comments:
             first_candidate_comment = grouped_comments[max_group][0] 
             return article.distance_from_root == first_candidate_comment.distance_from_root\
                    and self.combined_region_level_exceeded(article)
@@ -379,9 +379,9 @@ class SDAlgorithm():
         
         for des in list(comment_parent.iterdescendants()) + [comment_parent]:
             classname = id = ""
-            if des.attrib.has_key("class"):
+            if "class" in des.attrib:
                 classname = des.attrib['class']
-            if des.attrib.has_key("id"):
+            if "id" in des.attrib:
                 id = des.attrib['id']
             for ctag in COMMENT_TAGS:
                 contents = (des.text_content() + classname + id).lower() 
@@ -429,7 +429,7 @@ class SDAlgorithm():
             parent = node.getparent()
             if parent is not None:
                 parent_path = self.get_path(parent)
-                if self.valid_nodes.has_key(parent_path):
+                if parent_path in self.valid_nodes:
                     self.valid_nodes[parent_path].append(group)
                     self.valid_nodes[parent_path].extend(self.valid_nodes[group])
                     del self.valid_nodes[group]
@@ -556,7 +556,7 @@ class SDAlgorithm():
         if node_text is None:        
             node_text = self.find_node_text(node)
             
-        if node.attrib.has_key("class") and node.attrib["class"] == "wrappers":
+        if ("class" in node.attrib) and node.attrib["class"] == "wrappers":
             dess = []
             for d,des in enumerate(node.iterdescendants()):
                 if des.text is not None:
@@ -608,7 +608,7 @@ class SDAlgorithm():
         """
         Get the style attribute of the node if it exists.
         """
-        if node.attrib.has_key("style"):
+        if "style" in node.attrib:
             style = node.attrib.get('style')
         else:
             style = ""
@@ -626,7 +626,7 @@ class SDAlgorithm():
             
         if parent_path not in ["/html","/html/body"] and node_text is not None\
            and node.tag != 'body' and self.has_visible_parents(valid_parent):
-            if not self.valid_nodes.has_key(parent_path):
+            if parent_path not in self.valid_nodes:
                 self.valid_nodes[parent_path] = [node_path] 
             else:
                 if node_path not in self.valid_nodes[parent_path]:
