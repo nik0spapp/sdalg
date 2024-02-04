@@ -317,8 +317,8 @@ class SDAlgorithm():
         comment_remaining_nodes = comment_path.split("/")
         
         if len(article_remaining_nodes) > 1 and len(comment_remaining_nodes) > 1:
-            article_number = re.search("\d",article_remaining_nodes[0])
-            comment_number = re.search("\d",comment_remaining_nodes[0])
+            article_number = re.search(r"\d",article_remaining_nodes[0])
+            comment_number = re.search(r"\d",comment_remaining_nodes[0])
             if article_number and comment_number:
                 article_number.start()
                 comment_number.start()
